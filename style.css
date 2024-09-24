@@ -1,0 +1,1630 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-wrap: pretty; */
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f2f4;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: Orem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Roboto Condensed", sans-serif;
+    --ffSecondary: "Merienda", cursiva;
+
+}
+
+.align {
+    max-width: 1231px;
+    margin: auto;
+    padding: 0 6rem;
+}
+
+.componentSpacing {
+    padding: 5rem 0;
+}
+
+.miniPad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* :::PARENT CONTAINER Code starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts here::: */
+/* Navbar code */
+
+.navContainer {
+    background-color: white;
+}
+
+/* .navBar {
+    background-color: white;
+} */
+
+.navBody {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    padding: 0 9rem;
+}
+
+.navBody .headerLogo {
+    /* background-color: #ff0f00; */
+    margin-bottom: 1rem;
+}
+
+.headerLogo img {
+    width: 400px;
+}
+
+/* .navLinks {
+    background-color: white;
+} */
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+
+}
+
+.navButtons {
+    /* background-color: white; */
+    padding: 1.5rem 0 0.5rem 0;
+}
+.buttons {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 3rem;
+}
+/* .buttons ul {
+    background-color: white;
+} */
+.buttons button {
+    border-radius: 4rem;
+    border: none;
+}
+.buttons li {
+    padding: 1rem;
+    /* list-style-type: none; */
+}
+.buttons a {
+    color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.button1 {
+    background-color: #ffcc00;
+}
+.button2 {
+    background-color: #07c7B0;
+}
+
+.button3 {
+    background-color: #f98D11;
+}
+
+.button4 {
+    background-color: #014E90;
+}
+
+.button5 {
+    background-color: #752776;
+}
+
+.button6 {
+    background-color: #137601;
+}
+
+.button7 {
+    background-color: #7C323D;
+}
+
+.button8 {
+    background-color: #08D16A;
+}
+
+.button9 {
+    background-color: #ff0000;
+}
+
+.button9 a {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.code {
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.code button {
+    padding: 0 5rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 0.5rem 3rem;
+    background-color: white;
+    border-color: lightgray;
+}
+
+.homeMenus {
+    /* background-color: white; */
+    padding: 0 2rem 0 10rem;
+
+}
+
+.menus {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.menus a {
+    color: black;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 550;
+    font-size: 13px;
+}
+
+.dashBar {
+    color: white;
+    background-color: #00A995;
+    border-radius: 5rem;
+    padding: 5px 10px;
+}
+
+.navInfoBody {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    background-color: black;
+    /* color: white; */
+    padding: 2rem 25rem 2rem 15rem;
+}
+
+.navInfoHeading h4 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 550;
+    font-size: 13px;
+    color: white;
+}
+
+.navInfoContent {
+    /* color: white */
+}
+
+.movement {
+    /* background-color: #00A995; */
+    /* padding: 10rem 0; */
+}
+
+.movement li {
+    list-style: none;
+
+}
+
+.movement a {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 550;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    /* margin-right: 4rem; */
+    margin-left: 4rem;
+    /* display: flex; */
+    /* background-color:  #00A995; */
+}
+
+
+
+/* Navbar code */
+
+/* Hero Section code */
+.heroContainer {
+    /* background-color: white; */
+    background-image: url(./asset/images/03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heroSection {
+    /* background-color: white; */
+}
+
+.heroBody {
+    /* background-color: white; */
+}
+
+.heroContent {
+    /* background-color: white; */
+    padding: 35rem 10rem 5rem 10rem;
+
+}
+
+.heroContent h5 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+.heroContent h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 350;
+    font-size: 35px;
+    color: #07c7b0;
+}
+
+.exploreButton button {
+    background-color: #07c7b0;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: none;
+}
+
+.exploreButton a {
+    color: black;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+/* :::MAIN Code Starts here::: */
+/* programms code */
+.programmsContainer {
+    background-color: white;
+
+    /* max-height:00px; */
+    /* min-height: 400px; */
+}
+
+.programms {
+    /* background-color: white; */
+}
+
+.programmsHeadingBody {
+    /* background-color: white; */
+}
+
+.programmsHeadingContent {
+    /* background-color: white; */
+    padding: 1rem 0;
+}
+
+.programmsHeadingContent h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    color: black;
+}
+
+.programmsContentBody {
+    /* background-color: white; */
+}
+
+.programmsCard {
+    /* background-color: white; */
+    padding: 1rem;
+    align-self: normal;
+
+    /* height: 400px;
+    width: 200px;
+    margin: 60px; */
+}
+
+.programmsBorder {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1rem;
+    min-height: 420px;
+}
+
+.programmsCard:hover .programmsBorder {
+    background-color: #ffcc00;
+}
+
+.programmsCardTop {
+    /* background-color: white; */
+    /* border-radius: 50%; */
+    padding: 1rem;
+}
+
+.programmsCardTop img {
+    border-radius: 1rem;
+}
+
+.programmsCardMiddle {
+    /* background-color: white; */
+
+}
+
+.programmsCardMiddle h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    padding: 0.2rem 5rem;
+}
+
+.programmsCard:hover .programmsCardMiddle h3 {
+    color: white;
+}
+
+.programmsCardMiddle p {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    padding: 0.5rem 0;
+}
+
+.programmsCard:hover .programmsCardMiddle p {
+    color: white;
+}
+
+.programmsCardBottom {
+    /* background-color: white; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid white;
+    max-width: 300px;
+    margin: auto;
+    padding: 0.5rem 0;
+
+}
+
+.programmsCardBottom i {
+    color: white;
+    font-size: 20px;
+}
+
+/* programms code */
+
+/* regulatory code */
+.regulatoryContainer {
+    background-color: white;
+
+}
+
+.regulatory {
+    /* background-color: white; */
+    /* padding: 1rem 0; */
+}
+
+.regulatoryBody {
+    /* background-color: white; */
+}
+
+.regulatoryCard {
+    /* background-color: white; */
+    padding: 1rem;
+}
+
+.regulatoryBorder {
+    /* background-color: white; */
+    border: 2px solid #46a29f;
+    /* max-height: 428px; */
+    /* max-height:480px; */
+}
+
+.regulatoryBorder {
+    /* background-color: white; */
+    border: 2px solid #46a29f;
+    /* max-height:480px; */
+}
+
+.regulatoryCardHeader {
+    background-color: #46a29f;
+}
+
+.regulatoryCardHeader h4 {
+    /* background-color: white; */
+    color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 1rem;
+}
+
+.regulatoryCard:hover .regulatoryCardHeader {
+    background-color: #212529;
+}
+
+.regulatoryCardBody {
+    /* background-color: white; */
+}
+
+.regulatoryCardBody a {
+    /* background-color: white; */
+    color: black;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.forms {}
+
+.forms a {
+    text-decoration: none;
+    color: black;
+}
+
+.forms li {
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    list-style-type: square;
+}
+
+/* regulatory code */
+
+/*news code */
+.newsContainer {
+    background-color: white;
+}
+
+.news {
+    /* background-color: white; */
+}
+
+.newsHeadingBody {
+    /* background-color: white; */
+}
+
+.newsHeadingContent h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    color: #212529;
+    ;
+}
+
+.newsContentBody {
+    /* background-color: white; */
+}
+
+.newsCard {
+    /* background-color: white; */
+    padding: 1rem;
+}
+
+.newsCardHeader {
+    /* background-color: white; */
+}
+
+.newsCardBody {
+    background-color: yellow;
+}
+
+.newsCardBody a {
+    /* background-color: white; */
+    text-decoration: none;
+    padding: 1rem;
+    color: #007bff;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/*news code */
+
+/* why code */
+.whyContainer {
+    background-color: rgb(237 237 237);
+}
+
+.why {
+    /* background-color: white; */
+}
+
+.whyHeadingBody {
+    /* background-color: white; */
+    padding: 5rem 1rem;
+}
+
+.whyHeadingBody h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    color: #212529;
+}
+
+.whyHeadingBody p {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+}
+
+.whyContent {
+    /* background-color: white; */
+}
+
+.whyImageBody {
+    /* background-color: white; */
+}
+
+/* why code */
+
+/* innovation code */
+.innovationContainer {
+    background-color: white;
+}
+
+.innovation {
+    /* background-color: white; */
+}
+
+.innovationBody {
+    /* background-color: white; */
+
+}
+
+.innovationContent {
+    /* background-color: white;  */
+    max-width: 450px;
+    margin: auto;
+    /* padding-left:21rem; */
+    /* margin-left: 30rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    /* padding-left: 28rem;  */
+}
+
+.innovationContent h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    color: #212529;
+}
+
+.innovationContent p {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+    padding: 2rem 0;
+}
+
+.knowButton {
+    background-color: rgb(255, 204, 0);
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.knowButton a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.innovationImage {
+    /* background-color: white; */
+}
+
+/* innovation code */
+
+/* excellence code */
+.excellenceContainer {
+    background-color: rgb(239, 239, 239);
+}
+
+.excellence {
+    /* background-color: white; */
+}
+
+.excellenceBody {
+    /* background-color: white; */
+}
+
+.excellenceImage {
+    /* background-color: white; */
+    padding: 3rem 4rem 3rem 0;
+}
+
+.excellenceContent {
+    /* background-color: white; */
+    max-width: 450px;
+    margin: auto;
+    /* padding-right:18rem; */
+}
+
+.excellenceContent h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    color: rgb(101 101 101);
+}
+
+.excellenceContent p {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+    padding: 2rem 0;
+}
+
+.excellenceButtons h6 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.excellenceButtons button {
+    /* background-color: rgb(255, 204, 0); */
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+    border: 0.5px solid rgb(101 101 101);
+}
+
+.eButton1:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton1:hover h6 {
+    color: white;
+}
+
+.eButton2:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton2:hover h6 {
+    color: white;
+}
+
+.eButton3:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton3:hover h6 {
+    color: white;
+}
+
+.eButton4:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton4:hover h6 {
+    color: white;
+}
+
+.eButton5:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton5:hover h6 {
+    color: white;
+}
+
+.eButton6:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton6:hover h6 {
+    color: white;
+}
+
+.eButton7:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton7:hover h6 {
+    color: white;
+}
+
+.eButton8:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton8:hover h6 {
+    color: white;
+}
+
+.eButton9:hover button {
+    background-color: rgb(255, 204, 0);
+}
+
+.eButton9:hover h6 {
+    color: white;
+}
+
+/* excellence code */
+/* pinnacles code */
+.pinnaclesContainer {
+    background-color: white;
+}
+
+.pinnacles {
+    /* background-color: white; */
+    max-width: 1231px;
+    padding: 10rem 5rem;
+    margin: auto;
+}
+
+.pinnaclesHeadingBody {
+    /* background-color: white; */
+}
+
+.pinnaclesHeadingContent {
+    /* background-color: white; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pinnaclesHeadingContent h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: black;
+}
+
+.pinnaclesContentBody {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    /* padding: 2rem; */
+
+}
+
+.pinnaclesCardContent {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinnaclesImage img {
+    /* padding: 5rem; */
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 80%;
+}
+
+.pinnaclesCard {
+    /* background-color: white; */
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-bottom: 2rem;
+
+    /* padding-left: 15rem; */
+}
+
+.pinnaclesCardHeader {
+    /* background-color: white; */
+    /* margin-right: 5rem; */
+    margin-bottom: 4rem;
+}
+
+.pinnaclesCardHeader img {
+    /* background-color: white; */
+    aspect-ratio: 1/0.7;
+    width: 100%;
+    object-fit: contain;
+}
+
+.pinnaclesCardBody {
+    /* background-color: white; */
+    /* margin: 0 20rem 0 0; */
+    padding-left: 2rem;
+
+}
+
+.pinnaclesCardBody h3 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #575757;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.pinnaclesCardBody p {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+}
+
+/* pinnacles code */
+
+/* placements code */
+.placementsContainer {
+    background: linear-gradient(rgba(64, 224, 208, 0.151), rgba(255, 255, 255, 0.814));
+    padding: 10rem 0;
+}
+
+.placements {
+    /* background-color: white; */
+}
+
+.placementsBody {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 1.8fr 3.2fr;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 2rem 0 12rem;
+}
+
+.placementsContent {
+    /* background-color: white; */
+}
+
+.placementsContent h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #212529;
+
+}
+
+.placementsContent p {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #212529;
+    padding: 2rem 0;
+}
+
+.percentage {
+    /* background-color: gray; */
+    border: 4px solid white;
+}
+
+.percentage h3 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #212529;
+    padding: 4rem;
+}
+
+.placementsImage {
+    /* background-color: white; */
+    padding: 0 5rem;
+}
+
+/* placements code */
+
+/* collabration code */
+.collabrationContainer {
+    background-color: rgb(252 204 0);
+}
+
+.collabration {
+    /* background-color: white; */
+    padding: 8rem 0;
+}
+
+.collabrationHeadingBody {
+    /* background-color: white; */
+}
+
+.collabrationHeadingContent {
+    /* background-color: white; */
+}
+
+.collabrationHeadingContent h2 {
+    /* background-color: white; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+}
+
+.collabrationContentBody {
+    /* background-color: white; */
+}
+
+.collabratedIndustries {
+    /* background-color: white; */
+    padding: 2rem 15rem 0 15rem;
+}
+
+/* collabration code */
+/* socialmedia Code  */
+.socialMediaContainer {
+    background-color: rgb(222, 242, 241);
+}
+
+.socialMedia {
+    padding: 10rem 0;
+}
+
+.socialMediaBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.socialMediaCardHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socialMediaCardHeader i {
+    font-size: 18px;
+}
+
+.socialMediaCardHeader h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #212529;
+    margin-left: 1rem;
+}
+
+/* socialmedia Code  */
+
+/* spotlight code */
+.spotlightContainer {
+    background-color: #ebc71d;
+}
+
+.spotlight {
+    /* background-color: white; */
+    padding: 8rem 20rem 10rem 20rem;
+}
+
+.spotlightHeadingBody {
+    /* background-color: white; */
+}
+
+.spotlightHeadingContent {
+    /* background-color: white; */
+}
+
+.spotlightHeadingContent h2 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #212529;
+    padding-bottom: 2rem;
+}
+
+.spotlightContentBody {
+    /* background-color: white; */
+}
+
+.spotlightCard {
+    /* background-color: white; */
+    border: 1px solid white;
+
+}
+
+.spotlightBorder {
+    /* border: 1px solid white; */
+}
+
+.spotlightCardHeader {
+    /* background-color: white; */
+    padding: 2rem;
+}
+
+.spotlightCardHeader img {
+    /* background-color: white; */
+    aspect-ratio: 15/3;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    /* background-color: white; */
+
+}
+.spotlightCard:hover .spotlightBorder {
+    background-color: white;
+}
+
+.spotlightCard:hover .spotlightCardHeader img {
+    filter: brightness(1) invert(0);
+}
+
+
+.spotlightCardBody {
+    /* background-color: white; */
+}
+
+.spotlightCardBody p {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+    padding: 3rem;
+
+}
+
+/* spotlight code */
+
+/* :::MAIN Code Ends here::: */
+
+/* :::FOOTER Code Starts here::: */
+/* footerContent code */
+.footerContentContainer {
+    background-color: rgb(64, 64, 64);
+}
+
+.footerContent {
+    /* background-color:white ; */
+    padding: 5rem 0;
+}
+
+.footerContentBody {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 2.5fr 5fr 2.5fr;
+}
+
+.contactInformation {
+    /* background-color: white; */
+    border-right: 1px solid lightgray;
+    /* max-width: 400px; */
+    max-height: 400px;
+    padding: 0 2rem;
+
+}
+
+.footerLogo {
+    /* background-color: white; */
+}
+
+.footerLogoImage {
+    /* background-color: white; */
+}
+
+.footerLogoImage img {
+    /* background-color: white; */
+    /* aspect-ratio: 3/2;
+    width: 100%;
+    object-fit: contain; */
+    /* padding:  0 3rem; */
+}
+
+.address {
+    /* background-color: white; */
+}
+
+.addressContent {
+    /* background-color: white; */
+}
+
+.addressContent h5 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding: 3rem 0;
+}
+
+.contactDetails {
+    /* background-color: white; */
+}
+
+.contactDetails h5 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+
+}
+
+.aboutInstitution {
+    /* background-color: white; */
+    padding: 0 2rem;
+}
+
+.ourInstitution {
+    /* background-color: white; */
+}
+
+.ourInstitutionContent {
+    background-color: black;
+    /* max-width: 500px; */
+    /* padding: 0 4rem; */
+}
+
+.ourInstitutionContent h4 {
+    /* background-color: white; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.branches button {
+    /* background-color: white; */
+    border-radius: 20px 0 20px 0;
+    border: none;
+    /* padding: 0.5rem 3rem; */
+}
+
+.branches {
+    /* background-color: white; */
+    padding: 2rem 0;
+}
+
+.branches a {
+    /* background-color: white; */
+    /* padding: 5rem 5rem; */
+    text-decoration: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    /* padding: 5rem; */
+}
+
+.branchesCard1 button {
+    background-color: #4D458E;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard1:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard2 button {
+    background-color: #F34C8A;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard2:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard3 button {
+    background-color: #EC6140;
+    padding: 0.3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard3:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard4 button {
+    background-color: #9D5490;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard4:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard5 button {
+    background-color: #ABBF46;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard5:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard6 button {
+    background-color: #5482E2;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard6:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard7 button {
+    background-color: #0C97AA;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard7:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard8 button {
+    background-color: #F34C8A;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard8:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard9 button {
+    background-color: #37890D;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard9:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard10 button {
+    background-color: #FF7701;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard10:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard11 button {
+    background-color: #00A4C6;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard11:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard12 button {
+    background-color: #DB2522;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard12:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard13 button {
+    background-color: #9D5490;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard13:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.branchesCard14 button {
+    background-color: #DB2522;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.branchesCard14:hover button {
+    border-radius: 0 20px 0 20px;
+}
+
+.connectWithUs {
+    /* background-color: white; */
+    width: 300px;
+}
+
+.connectWithUsContent {}
+
+.connectWithUsContent h4 {
+    /* background-color: white; */
+    background-color: black;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding: 1rem;
+}
+
+.connectWithUsIcons {
+    /* background-color: white; */
+
+    font-size: 15px;
+}
+
+.connectWithUsIcons i {
+    padding: 1rem;
+    color: white;
+}
+
+.connectWithUsIcons a {
+    color: white;
+}
+
+.location {
+    /* background-color: white; */
+    width: 300px;
+}
+
+.locationHeading {
+    /* background-color: white; */
+}
+
+.locationContent {
+    /* background-color: black; */
+    /* max-width: 400px; */
+}
+
+.locationContent h4 {
+    background-color: black;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding: 1rem;
+}
+
+.googleMapLink {
+    padding-top: 2rem;
+}
+
+/* footerContent code */
+
+/* Copyrights code */
+.copyrightsContainer {
+    background-color: #212529;
+}
+
+.copyrights {
+    /* background-color: white; */
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.copyrightsBody {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.copyrightsContent {
+    /* background-color: white; */
+}
+
+.copyrightsContent p {
+    /* background-color: white; */
+    /* background-color: black; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.creatorLogo {
+    /* background-color: white; */
+}
+
+.creatorLogo img {
+    /* background-color: white; */
+    /* padding: 4rem 0 0 4rem; */
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    width: 35%;
+}
+
+/* Copyrights code */
+
+/* :::FOOTER Code Ends here::: */
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the Row Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .excellenceButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pinnaclesContentBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .placementsBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .socialMediaBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footerContentBody {
+        /* background-color: white; */
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .branches{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .copyrightsBody{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}    
+
+    /* Medium devices (tablets, upto 768px and above) */
+    @media (width >=577px) and (width <=768px) {}
+
+    /* Large devices (Laptops, upto 992px and above) */
+    @media (width >=769px) and (width <=992px) {}
+
+    /* X-Large devices (large desktops, upto 1200px and above) */
+    @media (width >=993px) and (width <=1200px) {}
+
+    /* XX-Large devices (larger desktops, upto 1400px and above) */
+    @media (width >=1200px) {}
